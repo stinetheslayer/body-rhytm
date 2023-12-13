@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE83D4F42B21E725001A98BA /* BodyRhythmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83D4F32B21E725001A98BA /* BodyRhythmApp.swift */; };
+		AE83D4F62B21E725001A98BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83D4F52B21E725001A98BA /* ContentView.swift */; };
+		AE83D4F82B21E725001A98BA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83D4F72B21E725001A98BA /* Item.swift */; };
+		AE83D4FA2B21E725001A98BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE83D4F92B21E725001A98BA /* Assets.xcassets */; };
+		AE83D4FD2B21E725001A98BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE83D4FC2B21E725001A98BA /* Preview Assets.xcassets */; };
+		AE83D5042B21EFB2001A98BA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83D5032B21EFB2001A98BA /* Colors.swift */; };
+		F4085D952B2751F700E99F19 /* FitnessPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4085D942B2751F700E99F19 /* FitnessPageView.swift */; };
+		F4085D9A2B27586200E99F19 /* WorkoutsBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4085D992B27586200E99F19 /* WorkoutsBoxView.swift */; };
+		F4085D9C2B275F7200E99F19 /* WeeklyActivitySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4085D9B2B275F7200E99F19 /* WeeklyActivitySummaryView.swift */; };
+		F42B4EBE2B27E5B100F45A6C /* IkigaiIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B4EBD2B27E5B100F45A6C /* IkigaiIcon.swift */; };
+		F42B4EC02B27E63200F45A6C /* TheSecretIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B4EBF2B27E63200F45A6C /* TheSecretIcon.swift */; };
+		F42B4EC22B27E6C600F45A6C /* MindsetIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B4EC12B27E6C600F45A6C /* MindsetIcon.swift */; };
+		F42B4EC42B27E99B00F45A6C /* GritIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B4EC32B27E99B00F45A6C /* GritIcon.swift */; };
+		F42B4EC62B27E9AA00F45A6C /* CrushItIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B4EC52B27E9AA00F45A6C /* CrushItIcon.swift */; };
+		F42B4EC82B27E9B700F45A6C /* ReworkIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B4EC72B27E9B700F45A6C /* ReworkIcon.swift */; };
+		F42B4ED42B2805EB00F45A6C /* SomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B4ED32B2805EB00F45A6C /* SomeView.swift */; };
+		F437C3022B28A0C900764907 /* Some2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F437C3012B28A0C900764907 /* Some2View.swift */; };
+		F4572EFA2B27A70900C217BD /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4572EF82B27A70900C217BD /* SF-Pro.ttf */; };
+		F4572EFB2B27A70900C217BD /* SF-Pro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4572EF92B27A70900C217BD /* SF-Pro-Italic.ttf */; };
+		F47ECFAB2B293D6E00001DD6 /* Ikigai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFAA2B293D6E00001DD6 /* Ikigai.mp3 */; };
+		F47ECFAD2B293D7C00001DD6 /* TheSecret.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFAC2B293D7C00001DD6 /* TheSecret.mp3 */; };
+		F47ECFAF2B293D8500001DD6 /* Mindset.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFAE2B293D8500001DD6 /* Mindset.mp3 */; };
+		F47ECFB12B293DC100001DD6 /* Grit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFB02B293DC100001DD6 /* Grit.mp3 */; };
+		F47ECFB32B293DC800001DD6 /* CrushIt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFB22B293DC800001DD6 /* CrushIt.mp3 */; };
+		F47ECFB52B293DD200001DD6 /* Rework.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFB42B293DD200001DD6 /* Rework.mp3 */; };
+		F47ECFB72B293DE200001DD6 /* Rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFB62B293DE200001DD6 /* Rise.mp3 */; };
+		F47ECFB92B293E5E00001DD6 /* Cliffside.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFB82B293E5E00001DD6 /* Cliffside.mp3 */; };
+		F47ECFBB2B293E6900001DD6 /* Analogue Dreams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFBA2B293E6900001DD6 /* Analogue Dreams.mp3 */; };
+		F47ECFBD2B293E7600001DD6 /* Blooming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFBC2B293E7600001DD6 /* Blooming.mp3 */; };
+		F47ECFBF2B293E7F00001DD6 /* Light Rays.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFBE2B293E7F00001DD6 /* Light Rays.mp3 */; };
+		F47ECFC12B293E8600001DD6 /* Summer Night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFC02B293E8600001DD6 /* Summer Night.mp3 */; };
+		F47ECFC32B293E8C00001DD6 /* Andromeda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFC22B293E8C00001DD6 /* Andromeda.mp3 */; };
+		F47ECFC52B293E9200001DD6 /* Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFC42B293E9200001DD6 /* Waves.mp3 */; };
+		F47ECFC72B293E9900001DD6 /* By the docks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFC62B293E9900001DD6 /* By the docks.mp3 */; };
+		F47ECFC92B293E9F00001DD6 /* Day Dreaming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F47ECFC82B293E9F00001DD6 /* Day Dreaming.mp3 */; };
+		F4CCA4E42B265A5500D56F46 /* SleepPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCA4E32B265A5500D56F46 /* SleepPageView.swift */; };
+		F4CCA4E82B268BC800D56F46 /* BookBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCA4E72B268BC800D56F46 /* BookBoxView.swift */; };
+		F4CCA4EA2B268E1F00D56F46 /* AudioBooksBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCA4E92B268E1F00D56F46 /* AudioBooksBoxView.swift */; };
+		F4CCA4EE2B26B19100D56F46 /* SleepMusicBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCA4ED2B26B19100D56F46 /* SleepMusicBoxView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE83D4F02B21E725001A98BA /* BodyRhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyRhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE83D4F32B21E725001A98BA /* BodyRhythmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyRhythmApp.swift; sourceTree = "<group>"; };
+		AE83D4F52B21E725001A98BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AE83D4F72B21E725001A98BA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AE83D4F92B21E725001A98BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE83D4FC2B21E725001A98BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE83D5032B21EFB2001A98BA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F4085D942B2751F700E99F19 /* FitnessPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessPageView.swift; sourceTree = "<group>"; };
+		F4085D992B27586200E99F19 /* WorkoutsBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsBoxView.swift; sourceTree = "<group>"; };
+		F4085D9B2B275F7200E99F19 /* WeeklyActivitySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyActivitySummaryView.swift; sourceTree = "<group>"; };
+		F42B4EBD2B27E5B100F45A6C /* IkigaiIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IkigaiIcon.swift; sourceTree = "<group>"; };
+		F42B4EBF2B27E63200F45A6C /* TheSecretIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSecretIcon.swift; sourceTree = "<group>"; };
+		F42B4EC12B27E6C600F45A6C /* MindsetIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindsetIcon.swift; sourceTree = "<group>"; };
+		F42B4EC32B27E99B00F45A6C /* GritIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GritIcon.swift; sourceTree = "<group>"; };
+		F42B4EC52B27E9AA00F45A6C /* CrushItIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrushItIcon.swift; sourceTree = "<group>"; };
+		F42B4EC72B27E9B700F45A6C /* ReworkIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReworkIcon.swift; sourceTree = "<group>"; };
+		F42B4ED32B2805EB00F45A6C /* SomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeView.swift; sourceTree = "<group>"; };
+		F437C3012B28A0C900764907 /* Some2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Some2View.swift; sourceTree = "<group>"; };
+		F4572EF82B27A70900C217BD /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		F4572EF92B27A70900C217BD /* SF-Pro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Italic.ttf"; sourceTree = "<group>"; };
+		F4572EFC2B27AC0100C217BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F47ECFAA2B293D6E00001DD6 /* Ikigai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ikigai.mp3; sourceTree = "<group>"; };
+		F47ECFAC2B293D7C00001DD6 /* TheSecret.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TheSecret.mp3; sourceTree = "<group>"; };
+		F47ECFAE2B293D8500001DD6 /* Mindset.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mindset.mp3; sourceTree = "<group>"; };
+		F47ECFB02B293DC100001DD6 /* Grit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Grit.mp3; sourceTree = "<group>"; };
+		F47ECFB22B293DC800001DD6 /* CrushIt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CrushIt.mp3; sourceTree = "<group>"; };
+		F47ECFB42B293DD200001DD6 /* Rework.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rework.mp3; sourceTree = "<group>"; };
+		F47ECFB62B293DE200001DD6 /* Rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rise.mp3; sourceTree = "<group>"; };
+		F47ECFB82B293E5E00001DD6 /* Cliffside.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cliffside.mp3; sourceTree = "<group>"; };
+		F47ECFBA2B293E6900001DD6 /* Analogue Dreams.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Analogue Dreams.mp3"; sourceTree = "<group>"; };
+		F47ECFBC2B293E7600001DD6 /* Blooming.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Blooming.mp3; sourceTree = "<group>"; };
+		F47ECFBE2B293E7F00001DD6 /* Light Rays.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Light Rays.mp3"; sourceTree = "<group>"; };
+		F47ECFC02B293E8600001DD6 /* Summer Night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Summer Night.mp3"; sourceTree = "<group>"; };
+		F47ECFC22B293E8C00001DD6 /* Andromeda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Andromeda.mp3; sourceTree = "<group>"; };
+		F47ECFC42B293E9200001DD6 /* Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waves.mp3; sourceTree = "<group>"; };
+		F47ECFC62B293E9900001DD6 /* By the docks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "By the docks.mp3"; sourceTree = "<group>"; };
+		F47ECFC82B293E9F00001DD6 /* Day Dreaming.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Day Dreaming.mp3"; sourceTree = "<group>"; };
+		F4CCA4E32B265A5500D56F46 /* SleepPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPageView.swift; sourceTree = "<group>"; };
+		F4CCA4E72B268BC800D56F46 /* BookBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBoxView.swift; sourceTree = "<group>"; };
+		F4CCA4E92B268E1F00D56F46 /* AudioBooksBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBooksBoxView.swift; sourceTree = "<group>"; };
+		F4CCA4ED2B26B19100D56F46 /* SleepMusicBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepMusicBoxView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE83D4ED2B21E725001A98BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE83D4E72B21E724001A98BA = {
+			isa = PBXGroup;
+			children = (
+				AE83D4F22B21E725001A98BA /* BodyRhythm */,
+				AE83D4F12B21E725001A98BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE83D4F12B21E725001A98BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE83D4F02B21E725001A98BA /* BodyRhythm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE83D4F22B21E725001A98BA /* BodyRhythm */ = {
+			isa = PBXGroup;
+			children = (
+				F4572EFC2B27AC0100C217BD /* Info.plist */,
+				AE83D5032B21EFB2001A98BA /* Colors.swift */,
+				AE83D4F32B21E725001A98BA /* BodyRhythmApp.swift */,
+				AE83D4F72B21E725001A98BA /* Item.swift */,
+				AE83D4F52B21E725001A98BA /* ContentView.swift */,
+				F4EDDA8A2B28BCC600A22245 /* Not Included Yet */,
+				AE83D4FB2B21E725001A98BA /* Preview Content */,
+				F4CCA4ED2B26B19100D56F46 /* SleepMusicBoxView.swift */,
+				F4CCA4E72B268BC800D56F46 /* BookBoxView.swift */,
+				F4085D992B27586200E99F19 /* WorkoutsBoxView.swift */,
+				F4085D9B2B275F7200E99F19 /* WeeklyActivitySummaryView.swift */,
+				F4CCA4E92B268E1F00D56F46 /* AudioBooksBoxView.swift */,
+				AE83D4FC2B21E725001A98BA /* Preview Assets.xcassets */,
+				F4085D982B2757A100E99F19 /* Pages */,
+				AE83D4F92B21E725001A98BA /* Assets.xcassets */,
+				F4572EF32B27A07300C217BD /* Fonts */,
+				F42B4EB92B27B85600F45A6C /* AudioBooks */,
+				F4EDDA892B28B06C00A22245 /* Musics */,
+				F42B4EBC2B27E53300F45A6C /* BookIcons */,
+			);
+			path = BodyRhythm;
+			sourceTree = "<group>";
+		};
+		AE83D4FB2B21E725001A98BA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4085D982B2757A100E99F19 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				F4CCA4E32B265A5500D56F46 /* SleepPageView.swift */,
+				F4085D942B2751F700E99F19 /* FitnessPageView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		F42B4EB92B27B85600F45A6C /* AudioBooks */ = {
+			isa = PBXGroup;
+			children = (
+				F47ECFAA2B293D6E00001DD6 /* Ikigai.mp3 */,
+				F47ECFAC2B293D7C00001DD6 /* TheSecret.mp3 */,
+				F47ECFAE2B293D8500001DD6 /* Mindset.mp3 */,
+				F47ECFB02B293DC100001DD6 /* Grit.mp3 */,
+				F47ECFB22B293DC800001DD6 /* CrushIt.mp3 */,
+				F47ECFB42B293DD200001DD6 /* Rework.mp3 */,
+			);
+			path = AudioBooks;
+			sourceTree = "<group>";
+		};
+		F42B4EBC2B27E53300F45A6C /* BookIcons */ = {
+			isa = PBXGroup;
+			children = (
+				F42B4EBD2B27E5B100F45A6C /* IkigaiIcon.swift */,
+				F42B4EBF2B27E63200F45A6C /* TheSecretIcon.swift */,
+				F42B4EC12B27E6C600F45A6C /* MindsetIcon.swift */,
+				F42B4EC32B27E99B00F45A6C /* GritIcon.swift */,
+				F42B4EC52B27E9AA00F45A6C /* CrushItIcon.swift */,
+				F42B4EC72B27E9B700F45A6C /* ReworkIcon.swift */,
+			);
+			path = BookIcons;
+			sourceTree = "<group>";
+		};
+		F4572EF32B27A07300C217BD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F4572EF92B27A70900C217BD /* SF-Pro-Italic.ttf */,
+				F4572EF82B27A70900C217BD /* SF-Pro.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F4EDDA892B28B06C00A22245 /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				F47ECFB62B293DE200001DD6 /* Rise.mp3 */,
+				F47ECFB82B293E5E00001DD6 /* Cliffside.mp3 */,
+				F47ECFBA2B293E6900001DD6 /* Analogue Dreams.mp3 */,
+				F47ECFBC2B293E7600001DD6 /* Blooming.mp3 */,
+				F47ECFBE2B293E7F00001DD6 /* Light Rays.mp3 */,
+				F47ECFC02B293E8600001DD6 /* Summer Night.mp3 */,
+				F47ECFC22B293E8C00001DD6 /* Andromeda.mp3 */,
+				F47ECFC42B293E9200001DD6 /* Waves.mp3 */,
+				F47ECFC62B293E9900001DD6 /* By the docks.mp3 */,
+				F47ECFC82B293E9F00001DD6 /* Day Dreaming.mp3 */,
+			);
+			path = Musics;
+			sourceTree = "<group>";
+		};
+		F4EDDA8A2B28BCC600A22245 /* Not Included Yet */ = {
+			isa = PBXGroup;
+			children = (
+				F42B4ED32B2805EB00F45A6C /* SomeView.swift */,
+				F437C3012B28A0C900764907 /* Some2View.swift */,
+			);
+			path = "Not Included Yet";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE83D4EF2B21E725001A98BA /* BodyRhythm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE83D5002B21E725001A98BA /* Build configuration list for PBXNativeTarget "BodyRhythm" */;
+			buildPhases = (
+				AE83D4EC2B21E725001A98BA /* Sources */,
+				AE83D4ED2B21E725001A98BA /* Frameworks */,
+				AE83D4EE2B21E725001A98BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BodyRhythm;
+			productName = BodyRhythm;
+			productReference = AE83D4F02B21E725001A98BA /* BodyRhythm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE83D4E82B21E724001A98BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AE83D4EF2B21E725001A98BA = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AE83D4EB2B21E724001A98BA /* Build configuration list for PBXProject "BodyRhythm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE83D4E72B21E724001A98BA;
+			productRefGroup = AE83D4F12B21E725001A98BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE83D4EF2B21E725001A98BA /* BodyRhythm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE83D4EE2B21E725001A98BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47ECFB92B293E5E00001DD6 /* Cliffside.mp3 in Resources */,
+				F47ECFC12B293E8600001DD6 /* Summer Night.mp3 in Resources */,
+				AE83D4FD2B21E725001A98BA /* Preview Assets.xcassets in Resources */,
+				F47ECFC92B293E9F00001DD6 /* Day Dreaming.mp3 in Resources */,
+				F4572EFA2B27A70900C217BD /* SF-Pro.ttf in Resources */,
+				F47ECFBF2B293E7F00001DD6 /* Light Rays.mp3 in Resources */,
+				F47ECFB52B293DD200001DD6 /* Rework.mp3 in Resources */,
+				F47ECFAD2B293D7C00001DD6 /* TheSecret.mp3 in Resources */,
+				F47ECFB72B293DE200001DD6 /* Rise.mp3 in Resources */,
+				F47ECFC72B293E9900001DD6 /* By the docks.mp3 in Resources */,
+				F47ECFAB2B293D6E00001DD6 /* Ikigai.mp3 in Resources */,
+				F47ECFC52B293E9200001DD6 /* Waves.mp3 in Resources */,
+				F47ECFB12B293DC100001DD6 /* Grit.mp3 in Resources */,
+				F47ECFC32B293E8C00001DD6 /* Andromeda.mp3 in Resources */,
+				F47ECFAF2B293D8500001DD6 /* Mindset.mp3 in Resources */,
+				AE83D4FA2B21E725001A98BA /* Assets.xcassets in Resources */,
+				F47ECFBB2B293E6900001DD6 /* Analogue Dreams.mp3 in Resources */,
+				F47ECFB32B293DC800001DD6 /* CrushIt.mp3 in Resources */,
+				F4572EFB2B27A70900C217BD /* SF-Pro-Italic.ttf in Resources */,
+				F47ECFBD2B293E7600001DD6 /* Blooming.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE83D4EC2B21E725001A98BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CCA4EE2B26B19100D56F46 /* SleepMusicBoxView.swift in Sources */,
+				F42B4EC82B27E9B700F45A6C /* ReworkIcon.swift in Sources */,
+				F4085D952B2751F700E99F19 /* FitnessPageView.swift in Sources */,
+				F4CCA4E82B268BC800D56F46 /* BookBoxView.swift in Sources */,
+				F42B4EC22B27E6C600F45A6C /* MindsetIcon.swift in Sources */,
+				F42B4EC42B27E99B00F45A6C /* GritIcon.swift in Sources */,
+				AE83D4F62B21E725001A98BA /* ContentView.swift in Sources */,
+				AE83D5042B21EFB2001A98BA /* Colors.swift in Sources */,
+				F42B4EC62B27E9AA00F45A6C /* CrushItIcon.swift in Sources */,
+				AE83D4F82B21E725001A98BA /* Item.swift in Sources */,
+				F4085D9C2B275F7200E99F19 /* WeeklyActivitySummaryView.swift in Sources */,
+				F4085D9A2B27586200E99F19 /* WorkoutsBoxView.swift in Sources */,
+				F437C3022B28A0C900764907 /* Some2View.swift in Sources */,
+				F42B4EC02B27E63200F45A6C /* TheSecretIcon.swift in Sources */,
+				AE83D4F42B21E725001A98BA /* BodyRhythmApp.swift in Sources */,
+				F42B4ED42B2805EB00F45A6C /* SomeView.swift in Sources */,
+				F4CCA4EA2B268E1F00D56F46 /* AudioBooksBoxView.swift in Sources */,
+				F42B4EBE2B27E5B100F45A6C /* IkigaiIcon.swift in Sources */,
+				F4CCA4E42B265A5500D56F46 /* SleepPageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE83D4FE2B21E725001A98BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE83D4FF2B21E725001A98BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE83D5012B21E725001A98BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BodyRhythm/Preview Content\"";
+				DEVELOPMENT_TEAM = 9P36VZVQT2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BodyRhythm/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AzizaRahimova.BodyRhythm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE83D5022B21E725001A98BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BodyRhythm/Preview Content\"";
+				DEVELOPMENT_TEAM = 9P36VZVQT2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BodyRhythm/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AzizaRahimova.BodyRhythm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE83D4EB2B21E724001A98BA /* Build configuration list for PBXProject "BodyRhythm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE83D4FE2B21E725001A98BA /* Debug */,
+				AE83D4FF2B21E725001A98BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE83D5002B21E725001A98BA /* Build configuration list for PBXNativeTarget "BodyRhythm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE83D5012B21E725001A98BA /* Debug */,
+				AE83D5022B21E725001A98BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE83D4E82B21E724001A98BA /* Project object */;
+}
