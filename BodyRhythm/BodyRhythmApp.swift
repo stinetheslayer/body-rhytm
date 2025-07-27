@@ -2,7 +2,7 @@
 //  BodyRhythmApp.swift
 //  BodyRhythm
 //
-//  Created by Aziza Rahimova on 07/12/23.
+//  Created by Aziza Rahimova on 16/12/23.
 //
 
 import SwiftUI
@@ -10,6 +10,7 @@ import SwiftData
 
 @main
 struct BodyRhythmApp: App {
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -23,10 +24,12 @@ struct BodyRhythmApp: App {
         }
     }()
 
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeScreen()
         }
         .modelContainer(sharedModelContainer)
+        .environmentObject(AppSettings())
     }
 }
