@@ -11,7 +11,7 @@ import UIKit
 
 struct WelcomeScreen: View {
     
-    
+    @StateObject private var healthKitManager = HealthKitManager()
     
     @State private var name: String = ""
     @State private var age: String = ""
@@ -170,23 +170,66 @@ struct WelcomeScreen: View {
                             .padding()
                     )
                     .padding()
-                
+                // --- Health App Button under Height ---
+                Button(action: {
+                    healthKitManager.requestAuthorization { success in
+                        if success {
+                            healthKitManager.fetchProfileData { fetchedAge, fetchedWeight, fetchedHeight in
+                                if let fetchedAge = fetchedAge { self.age = fetchedAge }
+                                if let fetchedWeight = fetchedWeight { self.weight = fetchedWeight }
+                                if let fetchedHeight = fetchedHeight { self.height = fetchedHeight }
+                            }
+                        }
+                    }
+                }) {
+                    HStack(spacing: 12) {
+                        ZStack {
+                            Circle()
+                                .fill(LinearGradient(
+                                    gradient: Gradient(colors: [Color.pink.opacity(0.7), Color.red.opacity(0.7)]),
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                ))
+                                .frame(width: 36, height: 36)
+                            Image(systemName: "heart.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 18, weight: .bold))
+                        }
+                        Text("Read from Health App")
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundColor(Color("LabelColor"))
+                        Spacer()
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 10)
+                }
+                .background(LinearGradient(
+                    gradient: Gradient(colors: [Color.white.opacity(0.25), Color.pink.opacity(0.15)]),
+                    startPoint: .leading,
+                    endPoint: .trailing
+                ))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color.pink.opacity(0.5), lineWidth: 1.5)
+                )
+                .cornerRadius(12)
+                .frame(width: 361, height: 50)
+                .shadow(color: Color.pink.opacity(0.15), radius: 6, x: 0, y: 3)
+                .padding(.bottom, 10)
+                // --- End Health App Button ---
                 Text("Before we begin, kindly share essential details about your body measurements. This information will be utilized to customize and optimize your personalized data experience.")
                     .multilineTextAlignment(.center)
                     .frame(width: 361, height: 80)
                     .foregroundColor(Color("LabelColor"))
                     .padding()
                 
-                
                 HStack {
-                                       Button("Skip") {
-                                           // Handle skip action
-                                           navigateToProfileView()
-                                       }
-                                       .foregroundColor(Color("LabelColor"))
-
-                                       Spacer()
-
+                    Button("Skip") {
+                        // Handle skip action
+                        navigateToProfileView()
+                    }
+                    .foregroundColor(Color("LabelColor"))
+                    Spacer()
                     NavigationLink(
                         destination: MainTabbedView().navigationBarHidden(true),
                         isActive: $isProfileViewActive
@@ -203,35 +246,31 @@ struct WelcomeScreen: View {
                         .foregroundColor(Color("LabelColor"))
                     }
                     .navigationBarHidden(true) // Hide the navigation bar if needed
+                }
+                .padding()
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Step to Proceed"),
+                        message: Text("Please fill in all fields"),
+                        dismissButton: .default(Text("OK"))
+                    )
+                }
+                Spacer(minLength: 0)
+            }
+            .navigationBarHidden(true) // Hide the navigation bar if needed
+        )}
+    }
 
-                                   }
-                                   .padding()
-                                   .alert(isPresented: $showAlert) {
-                                                          Alert(
-                                                              title: Text("Step to Proceed"),
-                                                              message: Text("Please fill in all fields"),
-                                                              dismissButton: .default(Text("OK"))
-                                                          )
-                                                      }
+    private func isInputValid() -> Bool {
+        // Perform validation logic here
+        return !name.isEmpty && !age.isEmpty && !weight.isEmpty && !height.isEmpty
+    }
 
-                                   Spacer()
-                               }
-                               .padding()
-                           )
-            
-                       }
-                   }
-
-                   private func isInputValid() -> Bool {
-                       // Perform validation logic here
-                       return !name.isEmpty && !age.isEmpty && !weight.isEmpty && !height.isEmpty
-                   }
-
-                   private func navigateToProfileView() {
-                       // Navigate to ProfileView and pass the information
-                       isProfileViewActive = true
-                   }
-               }
+    private func navigateToProfileView() {
+        // Navigate to ProfileView and pass the information
+        isProfileViewActive = true
+    }
+}
 
 
 struct WelcomeScreen_Previews: PreviewProvider {

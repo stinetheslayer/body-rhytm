@@ -1,0 +1,76 @@
+//
+//  .gitignore
+//  BodyRhythm
+//
+//  Created by Behrouz Salimi on 27/07/25.
+//
+
+# Xcode build products
+build/
+DerivedData/
+
+# User-specific files (workspace settings, schemes)
+*.xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Xcode project files that store user preferences
+*.xcworkspace/xcuserdata/
+
+# CocoaPods
+Pods/
+# If you want to check in Pods, exclude this
+
+# Carthage
+Carthage/Build/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Xcode Archives
+*.xcarchive
+
+# Archives and logs
+*.xcresult
+*.log
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Other
+.DS_Store
+
+# Playground
+timeline.xctimeline
+playground.xcworkspace
+
+# Temporary files
+*.swp
+*.lock
+
+
+*.xcuserstate
+*.xcuserdata/
+*.xcworkspace/xcuserdata/
+
+
+.DS_Store
+
+
+# Playground
+timeline.xctimeline
+playground.xcworkspace
+
+# Temporary files
+*.swp
+*.lock
+BodyRhythm.xcodeproj/xcuserdata/behrouzsalimi.xcuserdatad/xcschemes/xcschememanagement.plist
+BodyRhythm.xcodeproj/xcuserdata/azizarahimova.xcuserdatad/xcschemes/xcschememanagement.plist
+BodyRhythm.xcodeproj/project.xcworkspace/xcuserdata/behrouzsalimi.xcuserdatad/UserInterfaceState.xcuserstate
+BodyRhythm.xcodeproj/project.xcworkspace/xcuserdata/azizarahimova.xcuserdatad/UserInterfaceState.xcuserstate
+BodyRhythm.xcodeproj/xcuserdata/azizarahimova.xcuserdatad/xcschemes/xcschememanagement.plist
+BodyRhythm.xcodeproj/project.pbxproj

@@ -25,6 +25,7 @@
 		AEAA117F2B2DD0CC00D210AB /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA117E2B2DD0CC00D210AB /* WelcomePage.swift */; };
 		AEAA11812B2DD0DD00D210AB /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA11802B2DD0DD00D210AB /* ProfilePage.swift */; };
 		AEAA11872B2FAEF100D210AB /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA11862B2FAEF100D210AB /* MusicView.swift */; };
+		CC0C52772E3627990037C13C /* HealthKitManager 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0C52762E3627990037C13C /* HealthKitManager 2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		AEAA117E2B2DD0CC00D210AB /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		AEAA11802B2DD0DD00D210AB /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		AEAA11862B2FAEF100D210AB /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
+		CC0C52762E3627990037C13C /* HealthKitManager 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthKitManager 2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		AEAA115A2B2D9DC800D210AB /* BodyRhythm */ = {
 			isa = PBXGroup;
 			children = (
+				CC0C52762E3627990037C13C /* HealthKitManager 2.swift */,
 				AEAA115B2B2D9DC800D210AB /* BodyRhythmApp.swift */,
 				AEAA115D2B2D9DC800D210AB /* ContentView.swift */,
 				AEAA117E2B2DD0CC00D210AB /* WelcomePage.swift */,
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0C52772E3627990037C13C /* HealthKitManager 2.swift in Sources */,
 				AEAA115E2B2D9DC800D210AB /* ContentView.swift in Sources */,
 				AE3071372B3068FC000751A3 /* WorkoutBoxView.swift in Sources */,
 				AEAA11602B2D9DC800D210AB /* Item.swift in Sources */,
